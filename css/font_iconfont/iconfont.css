@@ -1,18 +1,16 @@
+@font-face{font-family:"iconfont";
+	src:url(iconfont.eot?t=1493907631574);
+	src:url(iconfont.eot?t=1493907631574#iefix) format('embedded-opentype'),
+	url(iconfont.woff?t=1493907631574) format('woff'),
+	url(iconfont.ttf?t=1493907631574) format('truetype'),
+	url(iconfont.svg?t=1493907631574#iconfont) format('svg')}
 
-@font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1493901089978'); /* IE9*/
-  src: url('iconfont.eot?t=1493901089978#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1493901089978') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1493901089978') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1493901089978#iconfont') format('svg'); /* iOS 4.1- */
-}
-
-.iconfont {
-  font-family:"iconfont" !important;
-  font-size:24px;
-  font-style:normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.iconfont{
+	font-family:"iconfont" !important;
+	font-size:24px;
+	font-style:normal;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale
 }
 
 .icon-ff-user:before { content: "\e60e";
@@ -31,7 +29,6 @@
   position:relative;
   top: -3px;}
 
-
 .icon-phone:before { content: "\e61c"; 
   font-size:16px;}
 
@@ -48,11 +45,21 @@
 
 
 
-.icon-weibo:before { content: "\e619";}
+.icon-weibo:before{content:"\e619"}
 
-.icon-facebook:before { content: "\e67a"; }
+.icon-facebook:before{content:"\e67a"}
 
+.icon-researchgate:before{content:"\e600"}
 
+.icon-wechat:before{content:"\e604"}
 
-.icon-researchgate:before { content: "\e600"; }
+.icon-jiahao:before{content:"\e601"}
+
+.icon-download1:before{content:"\e63e"}
+
+.icon-twitter:before{content:"\e640"}
+
+.icon-_sort-nume:before{content:"\e602"}
+.icon-_sort-nume1:before{content:"\e603"}
+
 
