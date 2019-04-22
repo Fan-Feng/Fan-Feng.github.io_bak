@@ -47,7 +47,7 @@
 		    .projection(projection);
 
 		// Plot the world map
-		d3.json("http://localhost:8000/Figure_For_Paper_Review/Map_For_Review_Paper/data/world-110m.v1.json", function(error, world) {
+		d3.json("https://github.com/faithefeng/faithefeng.github.io/blob/master/data/world-110m.v1.json", function(error, world) {
 		  	
 				svg.append("g")
 		  		.attr("class", "land")
@@ -67,7 +67,7 @@
 			});
 
 		// Load the data from the json file
-    d3.json('http://localhost:8000/Figure_For_Paper_Review/Map_For_Review_Paper/data/Data_Phase1.json', function(error, data) {
+    d3.json('https://github.com/faithefeng/faithefeng.github.io/blob/master/data/Data_Phase1.json', function(error, data) {
       if (error) 
         console.error(error);
       
