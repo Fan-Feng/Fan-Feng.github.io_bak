@@ -72,7 +72,7 @@
     .level {
       position: fixed;
       float: left;
-      top: 455px;
+      top: 440px;
       left: 220px;
       opacity: 1;
       width: 50px;
@@ -166,16 +166,21 @@
 
       // Width and Height of the whole visualization
       var w = 900;
-      var h = 400;
+      var h = 450;
       //D3 has some internal functionality that can turn GeoJSON data into screen coordinates based on the projection you set. This is not unlike other libraries such as Leaflet, but the result is much more open-ended, not constrained to shapes on a tiled Mercator map.1 So, yes, D3 supports projections.
       var projection = d3.geo.equirectangular();
       // Create GeoPath function that uses built-in D3 functionality to turn
       // lat/lon coordinates into screen coordinates
       var path = d3.geo.path().projection(projection);
       //add the following to create our SVG canvas.
+
+
+
+
       var svg = d3
         .select("body")
         .append("svg")
+        .attr("class","svg_canvas")
         .attr("width", w)
         .attr("height", h);
 
@@ -187,6 +192,7 @@
 
       // Append empty placeholder g element to the SVG
       // g will contain geometry elements
+
       var g = svg.append("g");
 
       // Color code for different classes
@@ -313,7 +319,7 @@
       });
 
       function redraw(year) {
-        d3.selectAll('circle').remove();
+        d3.select(".svg_canvas").selectAll('circle').remove();
         d3.selectAll('line').remove();
 
         // Width and Height of the whole visualization
@@ -325,7 +331,7 @@
         // lat/lon coordinates into screen coordinates
         var path = d3.geo.path().projection(projection);
         //add the following to create our SVG canvas.
-        svg = d3.select('svg');
+        svg = d3.select('.svg_canvas');
 
 
 
