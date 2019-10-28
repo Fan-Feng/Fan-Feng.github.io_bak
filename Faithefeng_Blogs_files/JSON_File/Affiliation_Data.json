@@ -1,0 +1,54 @@
+{
+    "Data":[
+        {
+            "year":1957,
+            "Affiliations":[
+                {
+                "id":1,
+                "name":"University 1",
+                "NumberOfPaper": 2,
+                "coordinates":[
+                    6.0833,
+                    50.775
+                ],
+                "label":"Placeholer"
+                }],
+            "Links":[{
+                "source_id":1,
+                "target_id":2
+            }]
+
+        },
+        {
+            "year":1958,
+            "Affiliations":[
+                {
+                "id":1,
+                "name":"University 1",
+                "NumberOfPaper": 2,
+                "coordinates":[
+                    6.0833,
+                    50.775
+                ],
+                "label":"Placeholer"
+                },
+                {
+                    "id":2,
+                    "name":"University 1",
+                    "NumberOfPaper": 2,
+                    "coordinates":[
+                        6.0833,
+                        50.775
+                    ],
+                    "label":"Placeholer"
+                }],
+            "Links":[{
+                "source_id":1,
+                "target_id":2
+            }]
+
+        },
+
+
+    ]
+}
