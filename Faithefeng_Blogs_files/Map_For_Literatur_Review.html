@@ -146,6 +146,8 @@
       &nbsp;&nbsp;
     </div>
     <div id="slider" style="width: 200px; padding-left:10px;"></div>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button id="play">Play</button>
   </div>
 
   <script type="text/javascript">
@@ -163,7 +165,9 @@
         }
       });
       $("#year").val($("#slider").slider("value"));
-
+      $( "#play" ).click(function(){
+        play(1957);
+      });
       // Width and Height of the whole visualization
       var w = 900;
       var h = 450;
@@ -317,7 +321,7 @@
             });
         });
       });
-
+    
       function redraw(year) {
         d3.select(".svg_canvas").selectAll('circle').remove();
         d3.selectAll('line').remove();
@@ -448,6 +452,16 @@
           });
         });
       };
+      function play(i){
+        redraw(i);
+        console.log(i);
+        setTimeout(function(){
+          if (++i<2019){
+            play(i);
+          }
+        },100);
+      };
+    
     });
   </script>
   <div class="footer">
