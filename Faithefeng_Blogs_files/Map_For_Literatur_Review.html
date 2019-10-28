@@ -149,7 +149,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button id="play">Play</button>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
+    <button id="zoom">Zoom</button>
   </div>
 
   <script type="text/javascript">
@@ -169,6 +169,9 @@
       $("#year").val($("#slider").slider("value"));
       $("#play").click(function () {
         play(1957);
+      });
+      $("#zoom").click(function () {
+        location.reload(true);
       });
       // Width and Height of the whole visualization
       var w = 900;
@@ -218,7 +221,6 @@
 
         //create the zoom effect
         var zoom = d3.behavior.zoom().on("zoom", function () {
-          d3.select("svg").selectAll().remove();
           g.attr(
             "transform",
             "translate(" +
@@ -340,8 +342,6 @@
         var path = d3.geo.path().projection(projection);
         //add the following to create our SVG canvas.
         svg = d3.select('.svg_canvas');
-
-
 
         // Append empty placeholder g element to the SVG
         // g will contain geometry elements
